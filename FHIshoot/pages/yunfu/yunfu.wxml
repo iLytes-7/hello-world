@@ -1,0 +1,74 @@
+<view class='page'>
+  <view class='box'>
+    <view class='title-center'>
+      <view class='text'>棚拍</view>
+    </view>
+    <view class='left-title'>特色:</view>
+    <view class='content'>专业孕妇棚拍写真</view>
+    <view class='taocan'>套餐:</view>
+    <view class='li'>1.精选服饰2套</view>
+    <view class='li'>2.提供化妆造型，首饰，道具</view>
+    <view class='li'>3.拍摄多种风格不同背景套组</view>
+    <view class='li'>4.提供精修25张照片，底片全送</view>
+    <view class='zengsong'>赠送:</view>
+    <view class='ol'>赠送12寸琉璃水晶一体精美相册</view>
+    <view class='ol'>韩式8寸白雕烤漆水晶摆台2个</view>
+    <view class='price'>价格：18800 PESO</view>
+  </view>
+  <view class='box1'>
+    <view class='title-center'>
+      <view class='text'>合照</view>
+    </view>
+    <view class='left-title'>特色:</view>
+    <view class='content'>全家福合照，拍摄地点在棚内或者家里</view>
+    <view class='taocan'>套餐:</view>
+    <view class='li'>1.拍照对象家庭人数没有限制</view>
+    <view class='li'>2.可以不同人数组合照，拍摄一组风格</view>
+    <view class='li'>3.提供淡妆造型，配饰，道具</view>
+    <view class='li'>4.拍摄完成精修10张，底片全送</view>
+    <view class='zengsong'>赠送:</view>
+    <view class='ol'>赠送12寸琉璃水晶一体精美相册</view>
+    <view class='ol'>24寸拉米娜画版/水晶画版挂框一个</view>
+    <view class='price'>价格：18800 PESO</view>
+
+     <view class='tip'>温馨提示</view>
+    <view class='tipcontent'>1.多添加照片每张入册PHP350 </view>
+    <view class='tipcontent'>2.拍摄前15天提前预约，不接受临时预约 </view>
+    <view class='tipcontent'>3.拍摄后一周内通知选片 </view>
+    <view class='tipcontent'>4.选片后20天内看排版设计，照会根据产品尺寸适当剪裁 </view>
+    <view class='tipcontent'>5.同意发片后30天取件，如需加急，请提起前说明 </view>
+    <view class='tipcontent'>6.超出套餐内容需遵守店内产品报价</view>
+    <view class='tipcontent'>7.特殊节假日价格根据成本有浮动，价格以咨询报价为准 </view>
+  </view>
+
+  <view class='bottom-box'>
+    <view class='title'>免费实拍体验</view>
+    <view class='desc'>获得1对1体验试拍机会</view>
+    <form bindsubmit="formSubmit">
+      <view class='formclass'>
+        <input name='name' placeholder='姓名' class='input'></input>
+      </view>
+      <view class='secondinput'>
+        <input name='phonenum' placeholder='手机号' class='input'></input>
+      </view>
+      <button class="form-but" formType="submit">立即预约</button>
+    </form>
+    <button class="callme" bindtap='callme'>咨询热线：400-100-6053</button>
+  </view>
+  <view class='zhe' wx:if="{{show}}">
+    <view class='zheBody'>
+      <image src='/pages/image/qiqiu.png ' class='qiqiu'></image>
+      <image src='/pages/image/gongxi.png ' class='gongxi'></image>
+      <view class='zheMain'>
+        <view class='zheMain-top'>恭喜您！预约成功</view>
+        <view class='zheMain-bottom'>请保持手机通畅，我们会尽快与您取得联系！</view>
+      </view>
+      <view class='zhefooter' bindtap='ok'>
+        知道了
+      </view>
+    </view>
+  </view>
+  <view class='ourtitlebox'>
+    <image src='/pages/image/ourtitle.png' class='ourtitle'></image>
+  </view>
+</view>

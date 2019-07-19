@@ -1,0 +1,85 @@
+<view class='page'>
+  <view class='box'>
+    <view class='title'>婚纱照</view>
+    <view class='stitle'>棚内 / 市内 / 旅拍</view>
+    <view class='desc'>提供专业拍摄场地，专业灯光师打光，及时在室内，我们也能为您提供专业的摄影记录您的幸福时刻。</view>
+    <view class='imgbox' bindtap='gohunsha'>
+      <image src='http://cloud.fhi365.cn:88/group1/M00/00/01/rB8QsF0cVG-AYHAFAAdtwPVhKTY496.png' class='img'></image>
+      <view class='lookbox'>
+        <text class='look'>查看详情 ></text>
+      </view>
+    </view>
+
+    <view class='couponbox'>
+      <image src='http://cloud.fhi365.cn:88/group1/M00/00/01/rB8QsF0cVJaAT5aFAABmQYs2Y7I405.png' class='coupon'></image>
+    </view>
+  </view>
+  <view class='box1'>
+    <view class='title'>个人写真</view>
+    <view class='stitle'>棚内 / 市内 / 海岛</view>
+    <view class='desc'>专业棚拍写真，市内写真和海岛沙滩写真。</view>
+    <view class='imgbox' bindtap='goperson'>
+      <image src='http://cloud.fhi365.cn:88/group1/M00/00/01/rB8QsF0cVceAGh9TAAhmnkEMTPU856.png' class='img'></image>
+      <view class='lookbox'>
+        <text class='look'>查看详情 ></text>
+      </view>
+    </view>
+  </view>
+  <view class='box1'>
+    <view class='title'>孕妇照</view>
+    <view class='stitle'>棚拍 / 全家福</view>
+    <view class='desc'>专业棚拍写真。</view>
+    <view class='imgbox' bindtap='goyunfu'>
+      <image src='http://cloud.fhi365.cn:88/group1/M00/00/01/rB8QsF0cVeWAA24dAAqSzDTNN_w735.png' class='img'></image>
+      <view class='lookbox'>
+        <text class='look'>查看详情 ></text>
+      </view>
+    </view>
+    <view class='couponbox'>
+      <image src='http://cloud.fhi365.cn:88/group1/M00/00/01/rB8QsF0cVhGAORgCAABtSm2rokY270.png' class='coupon'></image>
+    </view>
+  </view>
+  <view class='box1'>
+    <view class='title'>宝宝照</view>
+    <view class='stitle'>棚内</view>
+    <view class='desc'>专业棚拍写真，馆内有专业宝宝引导师。</view>
+    <view class='imgbox' bindtap='gobaby'>
+      <image src='http://cloud.fhi365.cn:88/group1/M00/00/01/rB8QsF0cVjiAXSFRAA095e2gGbI360.png' class='img'></image>
+      <view class='lookbox'>
+        <text class='look'>查看详情 ></text>
+      </view>
+    </view>
+  </view>
+  <view class='box1'>
+    <view class='bottom-box'>
+      <view class='title'>免费实拍体验</view>
+      <view class='desc'>获得1对1体验试拍机会</view>
+      <form bindsubmit="formSubmit">
+        <view class='formclass'>
+          <input name='name' placeholder='姓名' class='input'></input>
+        </view>
+        <view class='secondinput'>
+          <input name='phonenum' placeholder='手机号' class='input'></input>
+        </view>
+        <button class="form-but" formType="submit">立即预约</button>
+      </form>
+      <button class="callme" bindtap='callme'>咨询热线：400-100-6053</button>
+    </view>
+    <view class='zhe' wx:if="{{show}}">
+      <view class='zheBody'>
+        <image src='/pages/image/qiqiu.png ' class='qiqiu'></image>
+        <image src='/pages/image/gongxi.png ' class='gongxi'></image>
+        <view class='zheMain'>
+          <view class='zheMain-top'>恭喜您！预约成功</view>
+          <view class='zheMain-bottom'>请保持手机通畅，我们会尽快与您取得联系！</view>
+        </view>
+        <view class='zhefooter' bindtap='ok'>
+          知道了
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='ourtitlebox'>
+    <image src='/pages/image/ourtitle.png' class='ourtitle'></image>
+  </view>
+</view>
